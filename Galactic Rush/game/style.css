@@ -1,0 +1,230 @@
+@keyframes animation-out {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@font-face {
+  font-family: xax;
+  src: url(../fonts/FtyStrategycideNcv-elGl.ttf);
+}
+body {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background-image: url(https://cdn.discordapp.com/attachments/979760774262173766/1095403478756634634/realistyczne-tlo-galaktyki_23-2148991322.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.stats {
+  padding-left: 14px;
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+
+.stats p {
+  margin: 0;
+  color: #f1ecec;
+  font-family: xax;
+  font-size: 1.2vmax;
+}
+
+.hide {
+  display: none;
+}
+
+.spacing {
+  padding-left: 10px;
+}
+
+.start__game {
+  position: absolute;
+  /* padding: 5px 20px 20px 20px;
+  background-color: #33338f;
+  border-radius: 15px;
+  width: 25vw; */
+  width: 20vw;
+  height: 36vh;
+  position: absolute;
+  border-radius: 15px;
+  color: #e5ffcb;
+  background-color: #9155a5af;
+  font-family: xax;
+  font-size: 1vmax;
+  /* background-color: #a00f0f; */
+  padding: 15px;
+  padding-bottom: 30px;
+  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+
+.start__game h1 {
+  margin: 0;
+  text-align: center;
+  color: #c5e8a1;
+}
+
+.start__game li {
+  margin: 5px;
+}
+
+.start__game ol,
+.start__game h3 {
+  margin: 0;
+}
+
+.curtain {
+  height: 100%;
+  width: 0%;
+  background-color: #1e1844;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+li {
+  margin-left: 12px;
+}
+
+.game__over {
+  width: 22vw;
+  height: 22vh;
+  position: absolute;
+  border-radius: 15px;
+  color: #e5ffcb;
+  background-color: #cd98dfaf;
+  font-family: xax;
+  font-size: 2vmax;
+  /* background-color: #a00f0f;
+  border: 2px solid gray; */
+  padding: 10px;
+  padding-bottom: 30px;
+  text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+
+.game__over h1 {
+  text-align: center;
+  color: #c5e8a1;
+}
+
+.game__over h3 {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.end__score {
+  text-align: center;
+}
+
+/* .start__game__button,
+.back__menu{
+  
+} */
+
+.plause__game,
+.start__game__button,
+.back__menu {
+  font-family: xax;
+  margin-bottom: 10px;
+  margin-top: 5%;
+  box-shadow: inset 0px 1px 0px 0px #8e55a3;
+  /* background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color: #007dc1; */
+  background: linear-gradient(to bottom, #9664a8 5%, #8b4aa3 100%);
+  border-radius: 5px;
+  border: 1px solid #9664a8;
+  display: inline-block;
+  cursor: pointer;
+  color: #e5ffcb;
+  /* font-family: Arial; */
+  font-size: 1vmax;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5f107c;
+  border: 2px solid black;
+}
+
+.plause__game {
+  margin-top: 20%;
+}
+
+.plause__game:hover,
+.start__game__button:hover,
+.back__menu:hover {
+  background: linear-gradient(to bottom, #8b4aa3 5%, #9664a8 100%);
+  /* background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  background-color: #0061a7; */
+}
+
+.plause__game:active,
+.start__game__button:active,
+.back__menu:active {
+  position: relative;
+  top: 1px;
+}
+
+.start__game__button {
+  float: right;
+}
+
+.restart,
+.back__menu2 {
+  margin-top: 8%;
+  box-shadow: inset 0px 1px 3px 0px #91b8b3;
+  /* background: linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%); */
+  /* background-color: #768d87; */
+
+  background: linear-gradient(to bottom, #9664a8 5%, #8b4aa3 100%);
+  background-color: #9664a8;
+  border-radius: 5px;
+  border: 1px solid #9664a8;
+  display: inline-block;
+  cursor: pointer;
+  font-family: xax;
+  color: #e5ffcb;
+  /* font-family: Arial; */
+  font-size: 26px;
+  font-weight: bold;
+  padding: 8px 11px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #2b665e;
+}
+.restart:hover,
+.back__menu2:hover {
+  background: linear-gradient(to bottom, #8b4aa3 5%, #9664a8 100%);
+  /* background: linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color: #6c7c7c; */
+}
+.restart:active,
+.back__menu2:active {
+  position: relative;
+  top: 1px;
+}
+
+.back__menu2 {
+  float: right;
+}
+
+.freepik {
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2f2f2f;
+  font-size: 0.8vmax;
+  padding: 6px;
+  color: white;
+}
+
+.freepik a {
+  color: #007dc1;
+  text-decoration: none;
+}

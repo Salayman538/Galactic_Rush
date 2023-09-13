@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/flying-rocket.png" />
+    <title>Start</title>
+  </head>
+  <body>
+    <div class="curtain"></div>
+    <div class="best__score hide">
+      <p class="best-score"></p>
+      <br />
+      <p>Wyniki potrzebne, aby odblokowac informacje o nowej planecie:</p>
+      <br />
+      <ul>
+        <li>Merkury - 500</li>
+        <li>Wenus - 1000</li>
+        <li>Ziemia - 2000</li>
+        <li>Mars - 4000</li>
+        <li>Jowisz - 5000</li>
+        <li>Saturn - 8000</li>
+        <li>Uran - 12000</li>
+        <li>Neptun - 17000</li>
+      </ul>
+      <br />
+
+      <button class="start__level__button">Rozpocznij gre</button>
+    </div>
+    <p class="freepik hide">
+      Grafiki autorstwa
+      <a
+        href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planet&position=27&from_view=keyword&track=sph"
+        target="_blank"
+        >macrovector</a
+      >
+      na Freepik
+    </p>
+
+    <div class="start__content">
+      <div id="tekst_gorny">
+        <h1>Galactic Rush</h1>
+      </div>
+      <div id="tekst_dolny">
+        <center>
+          <button class="btn start__main__button">
+            <h2 class="h2">Rozpocznij</h2>
+          </button>
+        </center>
+      </div>
+    </div>
+
+    <canvas id="canvas" class="hide"></canvas>
+    <div class="popup hide">
+      <div class="planet__info">
+        <button class="popup__close">X</button>
+        <h1 class="planet__name"></h1>
+        <p class="planet__discription"></p>
+      </div>
+    </div>
+
+    <div class="message hide">
+      <h1>Wiadomość</h1>
+      <p><span>Od: </span> Mikołaj Kopernik</p>
+      <p><span>Do: </span> Ciebie</p>
+      <div class="message__content">
+        Witaj! Mam na imię Mikłaj Kopernik, jak już pewnie wiesz odkryłem coś
+        bardzo ważnego co dotyczy naszego postrzegania układu słonecznego, lecz
+        jeżeli nie wiesz to jak najszybciej się dowiedz. Spędziłem nad tym sporo
+        czasu, ale jest to dla mnie za mało. Pomyśl sobie ile jest jeszcze
+        rzeczy do zbadania w kosmosie, a przede wszystkim te ogromne planety,
+        które wędrują po układzie słonecznym. Sam nie jestem w stanie ich
+        zbadać, dlatego proszę Ciebie o pomoc. Wszystko dla ciebie już
+        przygotowałem. To gdzie się aktualnie znajdujesz jest to twóje centrum
+        dowodzenia, po kliknięciu na planetę możesz ujrzeć informacje o niej,
+        oczywiście jeśli masz odpowiednio wysoki zdobyty rekord. Wszystkie
+        potrzebne progi punktowe są wypisane w lewym górnym rogu, a pod nimi
+        przycisk, dzięki któremu możesz rozpocząć swoją misje. Teraz już
+        wszystko wiesz, możesz ruszać i pamiętaj, liczę na ciebie! Powodzenia!
+      </div>
+
+      <button class="message__close">X</button>
+    </div>
+
+    <script src="planets/app.js"></script>
+    <script src="planets/informations.js"></script>
+  </body>
+</html>

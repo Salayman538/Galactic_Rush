@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galactic Rush</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../images/flying-rocket.png" />
+  </head>
+  <body>
+    <div class="curtain"></div>
+    <canvas id="game"></canvas>
+    <div class="start__game hide">
+      <h1>MENU</h1>
+      <h3>Zasady gry:</h3>
+      <ol class="spacing">
+        <li>
+          Możesz się poruszać góra dół używająć klawiszy W i S lub strałki do
+          góry i do dołu.
+        </li>
+        <li>
+          Udane ominięcie nadlatujących przeszkód zapewni ci losową ilość
+          punktów.
+        </li>
+        <li>
+          Lecz uważaj! Przy pewnych progach punktowych przeszkody zaczną lecieć
+          szybciej, a twój statek zmieni położenie.
+        </li>
+        <li>
+          Jeśli jednak nie uda ci się na czas zareagować i nastąpi do zderzenia
+          tracisz jedno życie.
+        </li>
+        <li>
+          Postaraj się zdobyć jak najwięcej punktów, aby odkryć co ukrywają
+          jeszcze przed tobą planety i wypełnić swoją misje. Powodzenia!
+        </li>
+      </ol>
+
+      <button class="back__menu">Powrót do startu</button>
+      <button class="start__game__button">Graj</button>
+    </div>
+
+    <p class="freepik hide">
+      Grafiki autorstwa
+      <a href="http://www.freepik.com" target="_blank">Freepik</a> oraz
+      <a
+        href="https://pl.freepik.com/darmowe-wektory/zestaw-roznych-rakiet-i-statkow-kosmicznych-na-przezroczystym-tle_18175167.htm"
+        target="_blank"
+      >
+        brgfx</a
+      >
+      na Freepik
+    </p>
+
+    <div class="stats hide">
+      <p><button class="plause__game">Pauza</button></p>
+      <p class="points">Punkty: 0</p>
+      <p class="lives">Życia: 3</p>
+    </div>
+
+    <div class="game__over hide">
+      <h1>Koniec gry</h1>
+      <h3>Skończyły się życia</h3>
+      <br />
+      <p class="end__score"></p>
+      <button class="restart">Restart</button>
+      <button class="back__menu2">Powrót do startu</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

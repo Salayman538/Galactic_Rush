@@ -1,0 +1,234 @@
+@keyframes animation-in {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes animation-in2 {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes tekstg {
+  0% {
+    text-shadow: #4d00c1 10px 10px;
+  }
+  50% {
+    text-shadow: #7b35ea 7px 7px;
+  }
+  100% {
+    text-shadow: #3f00b6 10px 10px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.popup {
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.popup__close,
+.message__close,
+.end__message__close {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  font-size: 3vmax;
+  transition: all 800ms;
+}
+
+.message__close:hover,
+.popup__close:hover {
+  transform: scale(1.05);
+}
+
+#tekst_gorny {
+  padding-top: 100px;
+  /* text-shadow: #4d00c1 10px 10px; */
+  animation-name: tekstg;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.author {
+  background-color: #2f2f2f;
+  position: relative;
+  top: 32vh;
+  left: 40vw;
+}
+.planet__info {
+  width: 50vw;
+  height: 65vh;
+  background-color: rgba(54, 75, 68, 0.7);
+  position: relative;
+  border-radius: 20px;
+}
+
+.planet__info h1 {
+  text-align: center;
+  padding: 15px;
+  font-family: polish;
+  color: #68edcb;
+  height: 48vh;
+  font-size: 2.8vmax;
+}
+
+.planet__info p {
+  text-align: justify;
+  padding: 15px;
+  margin-top: -40vh;
+  font-size: 1.3vmax;
+  font-family: polish;
+  color: #d3fbd8;
+  word-spacing: 3px;
+}
+
+.planet__info span {
+  color: #68edcb;
+}
+
+.hide {
+  display: none;
+}
+
+.message {
+  width: 50vw;
+  height: 57vh;
+  background-color: rgb(54, 75, 68);
+  position: relative;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.message h1 {
+  text-align: center;
+  padding: 15px;
+  font-family: polish;
+  color: #68edcb;
+  font-size: 2.8vmax;
+}
+
+.message p {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-family: polish;
+  font-size: 1vmax;
+  color: white;
+}
+
+.message span {
+  color: #68edcb;
+  font-size: 1.3vmax;
+}
+
+.message__content {
+  color: white;
+  padding: 40px;
+  font-family: polish;
+  word-spacing: 3px;
+  text-align: justify;
+  font-size: 1.2vmax;
+}
+
+.curtain {
+  height: 100%;
+  width: 0%;
+  background-color: #1e1844;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.best__score {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18vw;
+  height: 44vh;
+  text-align: center;
+  font-size: 1vmax;
+  background-color: #2f2f2f;
+  color: white;
+  border-bottom-right-radius: 15px;
+}
+
+.best-score {
+  padding-top: 7px;
+  color: #e03030;
+}
+
+.freepik {
+  border-top-left-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #2f2f2f;
+  font-size: 0.8vmax;
+  padding: 6px;
+  color: white;
+}
+
+.freepik a {
+  color: #007dc1;
+  text-decoration: none;
+}
+
+.start__level__button {
+  box-shadow: inset 0px 1px 0px 0px #54a3f7;
+  background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color: #4d00c1;
+  border-radius: 3px;
+  border: 1px solid #124d77;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1vmax;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #154682;
+}
+.start__level__button:hover {
+  background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  background-color: #0061a7;
+}
+.start__level__button:active {
+  position: relative;
+  top: 1px;
+}
